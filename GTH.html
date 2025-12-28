@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <style>
+        .top{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .middle{
+            text-align: center;
+            margin-top:5px;
+        }
+        .guessNumber{
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+            text-align: center;
+            border:solid black 0.5px;
+            margin-bottom:10px;
+        }
+        .bottom{
+            text-align: center;
+            margin-top:5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .submitGuess{
+            width: 120px;
+            height: 35px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: solid black 0.5px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+    <form>
+    <h4>Guess the number</h4>
+    <p>Guess a number between 1 and 100</p>
+    <p>You have 10 attempts to guess the number.</p>
+    <br>
+    <input type="number" id="guess" class="guessNumber" placeholder="Enter the number">
+    <br>
+    <button id="submitGuess" class="submitGuess">Submit Guess</button>
+    </form>
+    </div>
+    <br>
+    <div class="bottom">
+    <p id="result"></p>
+    <p id="previous">Previous guess: </p>
+    <p class="remaining" id="remGuess">Guess Remaining: </p>
+    </div>
+</body>
+<script src="GTH.js"></script>
+</html>
